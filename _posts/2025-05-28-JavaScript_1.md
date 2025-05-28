@@ -1,3 +1,15 @@
+---
+layout: single
+title: "[JavaScript]자바스크립트에서 배열과 객체를 순회하는 방법"
+categories: JavaScript
+tag: [JavaScript]
+date: 2025-05-28
+published: true
+toc: true # 목차 생성
+author_profile: true # 사용자 프로필
+search: true # false로 설정하면 검색시 내용이 뜨지 않는다.
+---
+
 # 자바스크립트에서 배열과 객체를 순회하는 모든 방법 정리
 
 프론트엔드 개발을 하다 보면 **배열과 객체를 반복문으로 순회**하는 경우가 정말 많습니다.  
