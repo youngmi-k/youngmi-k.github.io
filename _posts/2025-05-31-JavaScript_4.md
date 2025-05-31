@@ -2,7 +2,7 @@
 layout: single
 title: "[JavaScript]Spread 연산자 & Rest 매개변수"
 categories: JavaScript
-tag: [JavaScript, Spread, Rest, 개념정리]
+tag: [JavaScript, Spread, Rest]
 date: 2025-05-31
 published: true
 toc: true # 목차 생성

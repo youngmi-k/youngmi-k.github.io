@@ -2,7 +2,7 @@
 layout: single
 title: "[JavaScript]자바스크립트 배열 조작 메서드 6가지 정리"
 categories: JavaScript
-tag: [JavaScript, 배열, 프론트엔드입문]
+tag: [JavaScript, 배열]
 date: 2025-05-29
 published: true
 toc: true # 목차 생성
@@ -20,10 +20,11 @@ search: true # false로 설정하면 검색시 내용이 뜨지 않는다.
 
 ## ✅ 1. `push()`
 
-**역할**: 배열의 맨 뒤에 새로운 요소를 추가하고, 변경된 배열의 길이를 반환  
+**역할**: 배열의 맨 뒤에 새로운 요소를 추가하고, 변경된 배열의 길이를 반환
+
 ```js
 let arr1 = [1, 2, 3];
-const newLength = arr1.push(4, 5, 6, 7); 
+const newLength = arr1.push(4, 5, 6, 7);
 console.log(arr1); // [1, 2, 3, 4, 5, 6, 7]
 console.log(newLength); // 7
 ```
@@ -32,7 +33,8 @@ console.log(newLength); // 7
 
 ## ✅ 2. `pop()`
 
-**역할**: 배열의 맨 뒤 요소를 제거하고, 제거된 값을 반환  
+**역할**: 배열의 맨 뒤 요소를 제거하고, 제거된 값을 반환
+
 ```js
 let arr2 = [1, 2, 3];
 const poppedItem = arr2.pop();
@@ -44,7 +46,8 @@ console.log(poppedItem); // 3
 
 ## ✅ 3. `shift()`
 
-**역할**: 배열의 맨 앞 요소를 제거하고, 제거된 값을 반환  
+**역할**: 배열의 맨 앞 요소를 제거하고, 제거된 값을 반환
+
 ```js
 let arr3 = [1, 2, 3];
 const shiftedItem = arr3.shift();
@@ -56,7 +59,8 @@ console.log(shiftedItem); // 1
 
 ## ✅ 4. `unshift()`
 
-**역할**: 배열의 맨 앞에 새로운 요소를 추가하고, 변경된 배열의 길이를 반환  
+**역할**: 배열의 맨 앞에 새로운 요소를 추가하고, 변경된 배열의 길이를 반환
+
 ```js
 let arr4 = [1, 2, 3];
 const newLength2 = arr4.unshift(0);
@@ -70,15 +74,16 @@ console.log(newLength2); // 4
 
 ## ✂️ 5. `slice()`
 
-**역할**: 배열의 일부를 잘라내어 **새로운 배열**로 반환  
-> 원본 배열은 변경되지 않음  
+**역할**: 배열의 일부를 잘라내어 **새로운 배열**로 반환
+
+> 원본 배열은 변경되지 않음
 
 ```js
 let arr5 = [1, 2, 3, 4, 5];
 
-let sliced = arr5.slice(2, 5);  // [3, 4, 5]
-let sliced2 = arr5.slice(2);   // [3, 4, 5]
-let sliced3 = arr5.slice(-3);  // [3, 4, 5]
+let sliced = arr5.slice(2, 5); // [3, 4, 5]
+let sliced2 = arr5.slice(2); // [3, 4, 5]
+let sliced3 = arr5.slice(-3); // [3, 4, 5]
 
 console.log(sliced, sliced2, sliced3);
 ```
@@ -87,7 +92,8 @@ console.log(sliced, sliced2, sliced3);
 
 ## 🔗 6. `concat()`
 
-**역할**: 두 배열을 합쳐서 **새로운 배열**을 반환  
+**역할**: 두 배열을 합쳐서 **새로운 배열**을 반환
+
 ```js
 let arr6 = [1, 2];
 let arr7 = [3, 4];
@@ -100,14 +106,14 @@ console.log(concatedArr); // [1, 2, 3, 4]
 
 ## 💡 마무리 요약
 
-| 메서드 | 역할 | 원본 변경 여부 |
-|--------|------|----------------|
-| `push` | 뒤에 추가 | O |
-| `pop` | 뒤에서 제거 | O |
-| `shift` | 앞에서 제거 | O |
-| `unshift` | 앞에 추가 | O |
-| `slice` | 잘라서 새 배열 반환 | ❌ |
-| `concat` | 배열 합치기 | ❌ |
+| 메서드    | 역할                | 원본 변경 여부 |
+| --------- | ------------------- | -------------- |
+| `push`    | 뒤에 추가           | O              |
+| `pop`     | 뒤에서 제거         | O              |
+| `shift`   | 앞에서 제거         | O              |
+| `unshift` | 앞에 추가           | O              |
+| `slice`   | 잘라서 새 배열 반환 | ❌             |
+| `concat`  | 배열 합치기         | ❌             |
 
 ---
 
@@ -117,4 +123,4 @@ console.log(concatedArr); // [1, 2, 3, 4]
 ---
 
 > ✍️ 블로그 주인장의 한 마디:  
-> 오늘 공부한 내용을 이렇게 정리해두면 나중에 정말 큰 자산이 됩니다!  
+> 오늘 공부한 내용을 이렇게 정리해두면 나중에 정말 큰 자산이 됩니다!
